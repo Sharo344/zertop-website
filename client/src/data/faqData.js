@@ -11,7 +11,7 @@ export const faqData = [
     id: 2,
     category: 'General',
     question: 'Are the property listings verified?',
-    answer: 'Yes, all properties listed on Prime Estate are verified by our team. We work only with licensed agents and property owners to ensure the authenticity of every listing.'
+    answer: 'Yes, all properties listed on Zertop are verified by our team. We work only with licensed agents and property owners to ensure the authenticity of every listing.'
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const faqData = [
   {
     id: 4,
     category: 'Buying',
-    question: 'Can I get a mortgage through Prime Estate?',
+    question: 'Can I get a mortgage through Zertop?',
     answer: 'While we don\'t provide mortgages directly, we work with several trusted financial institutions and can connect you with mortgage providers. Our agents can guide you through the mortgage application process.'
   },
   {
@@ -40,7 +40,7 @@ export const faqData = [
   {
     id: 7,
     category: 'Selling',
-    question: 'How do I list my property on Prime Estate?',
+    question: 'How do I list my property on Zertop?',
     answer: 'To list your property, create an account and select "Agent" or contact us directly. After verification, you can add your property listings through your dashboard. Our team will review and approve listings within 24 hours.'
   },
   {
@@ -82,7 +82,7 @@ export const faqData = [
   {
     id: 14,
     category: 'Payment',
-    question: 'Is there a fee to use Prime Estate?',
+    question: 'Is there a fee to use Zertop?',
     answer: 'Browsing and searching for properties is completely free. We only charge commission when a successful transaction (sale or rental) is completed through our platform.'
   },
   {

@@ -1,7 +1,7 @@
 // Site-wide constants
 
 export const SITE_INFO = {
-  name: "Prime Estate",
+  name: "Zertop",
   tagline: "Your Dream Home Awaits",
   description:
     "Find your perfect property with Nigeria's leading real estate platform",
@@ -103,7 +103,7 @@ export const AMENITIES = [
 ];
 
 export const API_BASE_URL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
 
 export const USER_ROLES = {
   CLIENT: "client",

@@ -92,7 +92,7 @@ const RegisterForm = () => {
     const result = await register(dataToSend);
 
     if (result.success) {
-      toast.success('Registration successful! Welcome to Prime Estate.');
+      toast.success('Registration successful! Welcome to Zertop.');
       navigate('/dashboard');
     } else {
       toast.error(result.error || 'Registration failed. Please try again.');
@@ -105,7 +105,7 @@ const RegisterForm = () => {
     <div className="w-full max-w-md">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-neutral-900 mb-2">Create Account</h2>
-        <p className="text-neutral-600">Join Prime Estate today</p>
+        <p className="text-neutral-600">Join Zertop today</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -210,6 +210,7 @@ const RegisterForm = () => {
           fullWidth
           loading={loading}
           disabled={loading}
+          className='bg-orange-600'
         >
           Create Account
         </Button>

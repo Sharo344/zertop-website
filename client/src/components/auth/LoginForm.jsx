@@ -76,7 +76,7 @@ const LoginForm = () => {
     <div className="w-full max-w-md">
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold text-neutral-900 mb-2">Welcome Back</h2>
-        <p className="text-neutral-600">Sign in to your Prime Estate account</p>
+        <p className="text-neutral-600">Sign in to your Zertop account</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -130,6 +130,7 @@ const LoginForm = () => {
           fullWidth
           loading={loading}
           disabled={loading}
+          className='bg-orange-600'
         >
           Sign In
         </Button>

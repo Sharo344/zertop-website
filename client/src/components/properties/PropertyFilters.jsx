@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 import Select from '../ui/Select';
 import Input from '../ui/Input';
 import { PROPERTY_TYPES, PROPERTY_STATUS, CITIES } from '../../utils/constants';
-import { bedroomOptions, bathroomOptions, sortOptions } from '../../../data/filterOptions';
+import { bedroomOptions, bathroomOptions, sortOptions } from '../../data/filterOptions';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchIcon from '@mui/icons-material/Search';
@@ -56,7 +56,7 @@ const PropertyFilters = ({ filters, onFilterChange, onSearch }) => {
             iconPosition="left"
             className="flex-1"
           />
-          <Button type="submit" variant="primary" size="md">
+          <Button type="submit" variant="primary" size="bg-orange-600">
             Search
           </Button>
         </div>
