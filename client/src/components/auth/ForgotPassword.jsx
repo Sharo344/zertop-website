@@ -54,7 +54,7 @@ const ForgotPassword = () => {
             Didn't receive the email? Check your spam folder or{' '}
             <button
               onClick={() => setSubmitted(false)}
-              className="text-primary-500 hover:text-primary-600 font-semibold"
+              className="text-primary-500 hover:text-primary-600 font-semibold bg-orange-600"
             >
               try again
             </button>
