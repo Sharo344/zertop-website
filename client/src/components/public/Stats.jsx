@@ -16,7 +16,7 @@ const Stats = () => {
       suffix: '+',
       label: 'Properties Listed',
       icon: HomeWorkIcon,
-      color: 'from-primary-500 to-primary-600'
+      color: 'bg-blue-600'
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Stats = () => {
       suffix: '+',
       label: 'Happy Clients',
       icon: PeopleIcon,
-      color: 'from-secondary-500 to-secondary-600'
+      color: 'bg-orange-600'
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Stats = () => {
       suffix: '+',
       label: 'Years of Excellence',
       icon: TrendingUpIcon,
-      color: 'from-green-500 to-green-600'
+      color: 'bg-emerald-600'
     },
     {
       id: 4,
@@ -40,37 +40,31 @@ const Stats = () => {
       suffix: '+',
       label: 'Expert Agents',
       icon: SupportAgentIcon,
-      color: 'from-purple-500 to-purple-600'
+      color: 'bg-indigo-600'
     }
   ];
 
   return (
-    <section className="py-20 bg-neutral-900 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-          backgroundSize: '50px 50px'
-        }} />
-      </div>
-
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+    <section className="py-24 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             Trusted by Thousands
           </h2>
-          <p className="text-xl text-neutral-400">
-            Numbers that speak for themselves
+          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+            Our numbers speak for themselves
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {stats.map((stat, index) => (
             <StatCard key={stat.id} stat={stat} index={index} />
           ))}
@@ -87,23 +81,26 @@ const StatCard = ({ stat, index }) => {
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className="text-center"
     >
-      <div className={`w-20 h-20 bg-gradient-to-br ${stat.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}>
-        <Icon className="w-10 h-10 text-white" />
+      {/* Icon Circle */}
+      <div className={`w-16 h-16 ${stat.color} rounded-lg flex items-center justify-center mx-auto mb-6 shadow-md`}>
+        <Icon className="w-8 h-8 text-white" />
       </div>
       
-      <div className="mb-2">
-        <span className="text-5xl md:text-6xl font-bold text-white">
+      {/* Number */}
+      <div className="mb-3">
+        <span className="text-4xl sm:text-5xl font-bold text-slate-900">
           {formatNumber(count)}{stat.suffix}
         </span>
       </div>
       
-      <p className="text-lg text-neutral-400 font-semibold">
+      {/* Label */}
+      <p className="text-sm sm:text-base text-slate-600 font-medium">
         {stat.label}
       </p>
     </motion.div>
