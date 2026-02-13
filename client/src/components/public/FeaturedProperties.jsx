@@ -112,7 +112,7 @@ const FeaturedProperties = () => {
                     className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-50 group"
                     aria-label="Previous properties"
                   >
-                    <ChevronLeftIcon className="w-6 h-6 text-slate-700 group-hover:text-blue-600 transition-colors" />
+                    <ChevronLeftIcon className="w-6 h-6 text-slate-700 group-hover:text-orange-600 transition-colors" />
                   </button>
 
                   {/* Indicator Dots */}
@@ -126,7 +126,7 @@ const FeaturedProperties = () => {
                         }}
                         className={`rounded-full transition-all ${
                           index === currentIndex
-                            ? 'bg-blue-600 w-3 h-3'
+                            ? 'bg-orange-600 w-3 h-3'
                             : 'bg-slate-300 w-2 h-2 hover:bg-slate-400'
                         }`}
                         whileHover={{ scale: 1.2 }}
@@ -142,7 +142,7 @@ const FeaturedProperties = () => {
                     className="p-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-50 group"
                     aria-label="Next properties"
                   >
-                    <ChevronRightIcon className="w-6 h-6 text-slate-700 group-hover:text-blue-600 transition-colors" />
+                    <ChevronRightIcon className="w-6 h-6 text-slate-700 group-hover:text-orange-600 transition-colors" />
                   </button>
                 </div>
               )}
@@ -161,7 +161,7 @@ const FeaturedProperties = () => {
               className="text-center"
             >
               <Link to="/properties">
-                <Button variant="primary" size="lg" icon>
+                <Button variant="primary" size="lg" icon className="bg-orange-600">
                   Explore All Properties
                 </Button>
               </Link>

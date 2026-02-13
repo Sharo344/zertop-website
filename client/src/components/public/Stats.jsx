@@ -16,7 +16,7 @@ const Stats = () => {
       suffix: '+',
       label: 'Properties Listed',
       icon: HomeWorkIcon,
-      color: 'bg-blue-600'
+      color: 'bg-orange-600'
     },
     {
       id: 2,

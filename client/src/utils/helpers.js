@@ -89,7 +89,7 @@ export const debounce = (func, wait) => {
 export const getPropertyStatusColor = (status) => {
   const colors = {
     'For Sale': 'bg-green-100 text-green-800 border-green-200',
-    'For Rent': 'bg-blue-100 text-blue-800 border-blue-200',
+    'For Rent': 'bg-orange-100 text-orange-800 border-orange-200',
     'Sold': 'bg-red-100 text-red-800 border-red-200',
     'Rented': 'bg-purple-100 text-purple-800 border-purple-200',
   };
@@ -101,7 +101,7 @@ export const getAppointmentStatusColor = (status) => {
     'pending': 'bg-yellow-100 text-yellow-800 border-yellow-200',
     'confirmed': 'bg-green-100 text-green-800 border-green-200',
     'cancelled': 'bg-red-100 text-red-800 border-red-200',
-    'completed': 'bg-blue-100 text-blue-800 border-blue-200',
+    'completed': 'bg-orange-100 text-orange-800 border-orange-200',
   };
   return colors[status] || 'bg-gray-100 text-gray-800 border-gray-200';
 };
@@ -183,7 +183,7 @@ export const getRandomColor = () => {
     'bg-orange-500',
     'bg-yellow-500',
     'bg-green-500',
-    'bg-blue-500',
+    'bg-orange-500',
     'bg-indigo-500',
     'bg-purple-500',
     'bg-pink-500'
