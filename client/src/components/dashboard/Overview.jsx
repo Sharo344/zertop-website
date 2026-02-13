@@ -26,7 +26,7 @@ const Overview = () => {
 
       const appointmentsResult = await appointmentService.getMyAppointments();
       if (appointmentsResult.success) {
-        setAppointments(appointmentsResult.data.appointments || []);
+        setAppointments(appointmentsResult.data?.appointments || []);
       }
 
       setLoading(false);

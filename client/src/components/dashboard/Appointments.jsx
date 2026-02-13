@@ -15,7 +15,7 @@ const Appointments = () => {
       setLoading(true);
       const result = await appointmentService.getMyAppointments();
       if (result.success) {
-        setAppointments(result.data.appointments || []);
+        setAppointments(result.data?.appointments || []);
       }
       setLoading(false);
     };

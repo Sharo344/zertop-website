@@ -1,12 +1,16 @@
-import api from './api';
+import api from "./api";
 
 const propertyService = {
   // Get all properties with filters
   getProperties: async (filters = {}) => {
     const queryParams = new URLSearchParams();
-    
-    Object.keys(filters).forEach(key => {
-      if (filters[key] !== undefined && filters[key] !== null && filters[key] !== '') {
+
+    Object.keys(filters).forEach((key) => {
+      if (
+        filters[key] !== undefined &&
+        filters[key] !== null &&
+        filters[key] !== ""
+      ) {
         queryParams.append(key, filters[key]);
       }
     });
@@ -17,13 +21,25 @@ const propertyService = {
 
   // Get single property
   getProperty: async (id) => {
-    const response = await api.get(`/properties/${id}`);
-    return response.data;
+    try {
+      const response = await api.get(`/properties/${id}`);
+      console.log("API Response:", response.data); // Debug log
+      return {
+        success: true,
+        data: response.data,
+      };
+    } catch (error) {
+      console.error("Property Service Error:", error); // Debug log
+      return {
+        success: false,
+        error: error.response?.data?.message || "Failed to fetch property",
+      };
+    }
   },
 
   // Get featured properties
   getFeaturedProperties: async () => {
-    const response = await api.get('/properties/featured');
+    const response = await api.get("/properties/featured");
     return response.data;
   },
 
@@ -35,7 +51,7 @@ const propertyService = {
 
   // Create property
   createProperty: async (propertyData) => {
-    const response = await api.post('/properties', propertyData);
+    const response = await api.post("/properties", propertyData);
     return response.data;
   },
 
@@ -55,7 +71,7 @@ const propertyService = {
   searchProperties: async (searchTerm) => {
     const response = await api.get(`/properties?search=${searchTerm}`);
     return response.data;
-  }
+  },
 };
 
 export default propertyService;

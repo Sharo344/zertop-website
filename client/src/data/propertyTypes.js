@@ -72,7 +72,7 @@ export const propertyStatus = [
   {
     value: 'For Rent',
     label: 'For Rent',
-    color: 'blue'
+    color: 'orange'
   },
   {
     value: 'Sold',

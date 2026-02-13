@@ -30,11 +30,11 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center py-20 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-orange-50 -z-10" />
       
       {/* Minimal Decorative Elements */}
       <motion.div
-        className="absolute top-32 right-20 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-10"
+        className="absolute top-32 right-20 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-10"
         animate={{
           scale: [1, 1.15, 1],
           opacity: [0.1, 0.15, 0.1],
@@ -71,7 +71,7 @@ const Hero = () => {
             <motion.div
               variants={fadeInUp}
               transition={{ delay: 0.1 }}
-              className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-xs font-semibold tracking-wide"
+              className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-xs font-semibold tracking-wide"
             >
               <TrendingUpIcon className="w-4 h-4" />
               <span>Nigeria's Trusted Real Estate Platform</span>
@@ -84,7 +84,7 @@ const Hero = () => {
               className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 leading-tight tracking-tight"
             >
               Find Your{' '}
-              <span className="text-blue-600">Dream Home</span>
+              <span className="text-orange-600">Dream Home</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -144,15 +144,15 @@ const Hero = () => {
               className="grid grid-cols-3 gap-6 pt-6 border-t border-slate-200"
             >
               <div>
-                <p className="text-2xl sm:text-3xl font-bold text-blue-600">2,500+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-orange-600">2,500+</p>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">Properties</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-bold text-blue-600">1,200+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-orange-600">1,200+</p>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">Happy Clients</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-bold text-blue-600">85+</p>
+                <p className="text-2xl sm:text-3xl font-bold text-orange-600">85+</p>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">Agents</p>
               </div>
             </motion.div>
@@ -171,10 +171,10 @@ const Hero = () => {
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
-              <div className="w-full h-40 bg-gradient-to-br from-blue-400 to-blue-600" />
+              <div className="w-full h-40 bg-gradient-to-br from-orange-400 to-orange-600" />
               <div className="p-5">
                 <h3 className="font-semibold text-slate-900 text-sm">Luxury Villa in VI</h3>
-                <p className="text-xl font-bold text-blue-600 mt-2">₦85,000,000</p>
+                <p className="text-xl font-bold text-orange-600 mt-2">₦85,000,000</p>
                 <div className="flex gap-4 mt-3 text-xs text-slate-600">
                   <span>5 🛏️</span>
                   <span>6 🛁</span>
